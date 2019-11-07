@@ -7,7 +7,7 @@ app = Flask(__name__) # __name__ variável do sistema que indica o nome do módu
 
 @app.route("/cliente/<nome>")
 def imprime_cliente (nome=None):
-    conn = mysql.connector.connect (host='mysql.cahulxfuge2f.us-east-1.rds.amazonaws.com', user='guilherme', passwd='25892589', port='3306', database='chinook')
+    conn = mysql.connector.connect (host=' ', user=' ', passwd=' ', port=' ', database='chinook')
     cursor = conn.cursor()
     qstr = "select * from customers where FirstName=\'"+nome+"\'"
     print (qstr)
@@ -25,7 +25,7 @@ def imprime_cliente (nome=None):
 
 @app.route("/clientes/")
 def imprime_clientes():
-   conn = conn = mysql.connector.connect (host='mysql.cahulxfuge2f.us-east-1.rds.amazonaws.com', user='guilherme', passwd='25892589', port='3306', database='chinook')
+   conn = conn = mysql.connector.connect (host=' ', user=' ', passwd=' ', port=' ', database='chinook')
    cursor = conn.cursor()
    qstr = "select * from customers"
    print (qstr)
@@ -43,7 +43,7 @@ def imprime_clientes():
 
 @app.route("/clientesbypais/<pais>")
 def imprime_clientes_por_pais(pais=None):
-   conn = conn = mysql.connector.connect (host='mysql.cahulxfuge2f.us-east-1.rds.amazonaws.com', user='guilherme', passwd='25892589', port='3306', database='chinook')
+   conn = conn = mysql.connector.connect (host=' ', user=' ', passwd=' ', port=' ', database='chinook')
    cursor = conn.cursor()
    qstr = "select * from customers where country = \'"+pais+"\' "
    print (qstr)
