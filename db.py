@@ -1,6 +1,6 @@
 import mysql.connector
 
-conn = mysql.connector.connect (host='mysql.cahulxfuge2f.us-east-1.rds.amazonaws.com', user='guilherme', passwd='25892589', port='3306', database='chinook')
+conn = mysql.connector.connect (host=' ', user=' ', passwd=' ', port=' ', database='chinook')
 
 cursor = conn.cursor()
 
