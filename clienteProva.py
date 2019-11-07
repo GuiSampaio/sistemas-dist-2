@@ -3,7 +3,7 @@ from socket import  *
 
 s = socket ()
 
-servidor="ec2-3-91-222-208.compute-1.amazonaws.com"
+servidor=" "
 porta=8792
 s.connect((servidor, porta))
 
