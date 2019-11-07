@@ -18,7 +18,7 @@ def func(conn,cliente):
        conn.send(str.encode(str1, "utf-8"))
 
 s= socket()
-host= "ec2-3-91-222-208.compute-1.amazonaws.com"
+host= " "
 porta = 8792
 s.bind((host, porta))
 s.listen(10)
